@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+butler push expansion_game.zip "itchjohnshaughnessycom/expansion-game:html"

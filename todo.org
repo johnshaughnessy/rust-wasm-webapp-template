@@ -1,0 +1,5 @@
+* DONE Build a wasm bundle with wasm-pack
+* DONE Load the wasm bundle from an npm project
+* DONE Zip & ship the application on itch.io
+* TODO Ship the application on my own website
+* DONE Create a button that increments a counter (where the counter is in rust).

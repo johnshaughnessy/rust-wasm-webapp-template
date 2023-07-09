@@ -1,0 +1,28 @@
+{
+  "name": "expansion_game_client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "css-loader": "^6.8.1",
+    "expansion_game_wasm": "file:../expansion_game_wasm/pkg",
+    "postcss-color-function": "^4.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-loader": "^7.3.3",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}

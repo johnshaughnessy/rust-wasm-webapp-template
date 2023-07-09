@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+dir=$(dirname $(dirname $(readlink -f "$0")))
+expansion_game_wasm="$dir/expansion_game_wasm"
+expansion_game_client="$dir/expansion_game_client"
+
+pushd $expansion_game_wasm
+wasm-pack build
+popd
+
+pushd $expansion_game_client
+npm run build
+popd
+
+zip -r expansion_game.zip $expansion_game_client/dist/

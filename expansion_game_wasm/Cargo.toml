@@ -1,0 +1,14 @@
+[package]
+name = "expansion_game_wasm"
+version = "0.1.0"
+authors = ["John Shaughnessy <john@johnshaughnessy.com>"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+gloo = "0.8.1"
+wasm-bindgen = "0.2.87"
+web-sys = "0.3.64"
+yew = {version = "0.20.0", features = ["csr"] }

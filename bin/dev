@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+dir=$(dirname $(dirname $(readlink -f "$0")))
+expansion_game_wasm="$dir/expansion_game_wasm"
+expansion_game_client="$dir/expansion_game_client"
+
+build="cd $expansion_game_wasm && wasm-pack build &&"
+webserver="cd $expansion_game_client && npm run start"
+onchange="$build $webserver"
+
+alacritty -e zsh -c "cd $expansion_game_wasm; cargo watch -s '$onchange'" &

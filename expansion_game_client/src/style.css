@@ -1,0 +1,31 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+:root {
+  --color-background: #efefef;
+  --color-background-invert: #202020;
+  --color-text-default: #202020;
+  --color-text-invert: #efefef;
+  --color-text-button: #efefef;
+
+  .dark {
+    --color-background: #202020;
+    --color-background-invert: #efefef;
+    --color-text-default: #efefef;
+    --color-text-invert: #202020;
+    --color-text-button: #efefef;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+/* TODO: What is this? */
+/* @layer utilities { */
+/*   .dark { */
+/*     --color-primary: blue; */
+/*   } */
+/* } */
